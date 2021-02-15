@@ -10,7 +10,7 @@ namespace Business.Abstract
     public interface IUserService
     {
         DataResult<List<User>> GetAll();
-        DataResult<User> GetCustomerById(int Id);
+        DataResult<User> GetUserById(int Id);
         Result Add(User user);
         Result Delete(User user);
         Result Update(User user);

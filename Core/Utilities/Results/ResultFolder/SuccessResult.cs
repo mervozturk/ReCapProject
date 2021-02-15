@@ -14,7 +14,7 @@ namespace Core.Utilities.Results.ResultFolder
         {
 
         }
-        public SuccessResult(string message) : base(false, message)
+        public SuccessResult(string message) : base(true, message)
         {
 
         }

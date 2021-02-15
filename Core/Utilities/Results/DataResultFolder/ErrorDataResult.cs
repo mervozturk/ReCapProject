@@ -23,7 +23,7 @@ namespace Core.Utilities.Results.DataResultFolder
         {
 
         }
-        public ErrorDataResult(string message) : base(default, true, message)
+        public ErrorDataResult(string message) : base(default, false, message)
         {
 
         }

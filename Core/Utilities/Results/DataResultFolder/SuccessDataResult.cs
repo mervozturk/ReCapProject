@@ -15,7 +15,7 @@ namespace Core.Utilities.Results.DataResultFolder
         {
 
         }
-        public SuccessDataResult(T data, string message) : base(data, false, message)
+        public SuccessDataResult(T data, string message) : base(data, true, message)
         {
 
         }
