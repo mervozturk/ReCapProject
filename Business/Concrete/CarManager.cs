@@ -51,7 +51,7 @@ namespace Business.Concrete
         {
             return new SuccessDataResult < List < Car >> (_carDal.GetAll(C => C.ColorId == Id),Messages.Listed);
         }
-
+        [ValidationAspect(typeof(CarValidator))]
         public Result Update(Car car)
         {
             _carDal.Update(car);
