@@ -12,9 +12,8 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            Menu();
-            //DtoTest();
-                       
+            //Menu();
+            //DtoTest();                       
         }
 
         private static void RentalTest()

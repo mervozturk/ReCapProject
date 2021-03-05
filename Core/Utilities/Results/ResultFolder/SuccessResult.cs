@@ -6,6 +6,10 @@ namespace Core.Utilities.Results.ResultFolder
 {
     public class SuccessResult :Result
     {
+        public SuccessResult() : base(true)
+        {
+
+        }
         public SuccessResult(bool success,string message):base(true,message)
         {
 

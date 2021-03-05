@@ -6,6 +6,10 @@ namespace Core.Utilities.Results.ResultFolder
 {
     public class ErrorResult : Result
     {
+        public ErrorResult():base(false)
+        {
+
+        }
         public ErrorResult(bool success, string message) : base(false, message)
         {
 
