@@ -1,5 +1,6 @@
 ﻿using Business.Concrete;
 using Core.Entities;
+using Core.Entities.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
 using System;
@@ -115,7 +116,7 @@ namespace ConsoleUI
                     Console.Write("Email: ");
                     user.Email = Console.ReadLine();
                     Console.Write("Password: ");
-                    user.Password = Console.ReadLine();
+                    //user.Password = Console.ReadLine();
                     Console.WriteLine(userManager.Add(user).Message);
                     break;
                 case 2:
@@ -133,7 +134,7 @@ namespace ConsoleUI
                     Console.Write("Email: ");
                     user.Email = Console.ReadLine();
                     Console.Write("Password: ");
-                    user.Password = Console.ReadLine();
+                    //user.Password = Console.ReadLine();
                     Console.WriteLine(userManager.Update(user).Message);
                     break;
                 case 4:

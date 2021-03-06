@@ -1,4 +1,5 @@
-﻿using Core.Utilities.Results.DataResultFolder;
+﻿using Core.Entities.Concrete;
+using Core.Utilities.Results.DataResultFolder;
 using Core.Utilities.Results.ResultFolder;
 using Entities.Concrete;
 using System;
@@ -11,6 +12,8 @@ namespace Business.Abstract
     {
         DataResult<List<User>> GetAll();
         DataResult<User> GetUserById(int Id);
+        DataResult<List<OperationClaim>> GetClaims(User user);
+        DataResult<User> GetByMail(string email);
         Result Add(User user);
         Result Delete(User user);
         Result Update(User user);
